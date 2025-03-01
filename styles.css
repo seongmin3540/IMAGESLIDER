@@ -1,0 +1,48 @@
+/* 전체 슬라이더 컨테이너 */
+.slider-container1 {
+    position: absolute;
+    top : 20px;
+    left : 20px;
+    width: 100%;
+    max-width: 300px;  /* 슬라이더 크기 조절 */
+    max-height : 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* 슬라이드 이미지들 */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 이전 및 다음 버튼 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

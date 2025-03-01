@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 슬라이더 컨테이너 -->
+    <div class="slider-container1">
+        <div class="slider">
+            <!-- 이미지 목록 -->
+            <img src="images/image1.png" alt="Image 1" class="slide">
+            <img src="images/image2.png" alt="Image 2" class="slide">
+            <img src="images/image3.png" alt="Image 3" class="slide">
+            <img src="images/image4.png" alt="Image 4" class="slide">
+            <img src="images/image5.png" alt="Image 5" class="slide">
+            <img src="images/image6.png" alt="Image 6" class="slide">
+            <img src="images/image7.png" alt="Image 7" class="slide">
+            <img src="images/image8.png" alt="Image 8" class="slide">
+            <img src="images/image9.png" alt="Image 9" class="slide">
+        </div>
+
+        <!-- 이전 버튼 -->
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <!-- 다음 버튼 -->
+        <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
